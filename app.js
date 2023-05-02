@@ -5,6 +5,7 @@ const PORT = 8080;
 require("dotenv/config");
 // Import routers and their corresponding middlewares :
 const homeRouter = require("./routes/home");
+// This following line is middleware
 app.use("/", homeRouter);
 const aboutRouter = require("./routes/about");
 app.use("/about", aboutRouter);

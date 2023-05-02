@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express();
 router.get("/",(req,res) => {res.send("We are inside the about route")});
-router.get("/link-1" , (req,res) => {
-    res.send("Link-1 inside the about router /about/link-1")
+router.get("/story" , (req,res) => {
+    res.send("story page /about/story")
 });
-router.get("/link-2" , (req,res) => {
-    res.send("Link-2 inside the about router /about/link-2")
+router.get("/future" , (req,res) => {
+    res.send("future page /about/future")
 });
 module.exports = router;
 
